@@ -2,20 +2,36 @@
 <ContentPage
     x:Class="ProjetoElemento.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#F5A9C4">
 
     <ScrollView>
-        <StackLayout Margin="40">
-            <VerticalStackLayout>
-                <Label Text="Bem-vindo ao sistema de gerenciamento PetCare!" 
-                       FontSize="24" 
-                       HorizontalOptions="Center" 
-                       Margin="0,0,0,20"/>
-                <Button Clicked="Mostrar" Text="Ver Animais Cadastrados"/>
-                <Label/>
-                <Button Clicked="Cadastrar" Text="Cadastrar Animais"/>
-            </VerticalStackLayout>
-        </StackLayout>
+        <VerticalStackLayout
+            Margin="40"
+            Padding="30"
+            Spacing="30">
+
+            <Image Source="logo_desejo.jpeg"
+                   HeightRequest="160"
+                   Aspect="AspectFit" />
+
+            <Label Text="Seja bem-vinda ao Desejo Íntimo — descubra a lingerie que desperta sua essência e realça sua beleza única."
+                   TextColor="#5B259F"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center" />
+
+            <Button Text="Login"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    BackgroundColor="White"
+                    CornerRadius="25"
+                    HeightRequest="50"
+                    WidthRequest="200"
+                    Clicked="ButtonClicked"/>
+
+        </VerticalStackLayout>
     </ScrollView>
 
-</ContentPage> 
+</ContentPage>

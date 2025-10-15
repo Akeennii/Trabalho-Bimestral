@@ -1,10 +1,7 @@
 ﻿namespace ProjetoElemento
 {
-    public partial class AppShell : Shell
+    public partial class App : Application
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        
     }
 }

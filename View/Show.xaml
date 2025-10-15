@@ -4,56 +4,67 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Show"
-    >
+    BackgroundColor="#F5A9C4">
+
     <ScrollView>
-        <VerticalStackLayout Padding="20">
-            <Frame CornerRadius="10">
-                <StackLayout>
-                    <Label Text="Pets Cadastrados"
-                           FontSize="Large"
-                           HorizontalOptions="Center"/>
-                    
-                    <CollectionView x:Name="listaAnimais" ItemsSource="{Binding}">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame Padding="10"
-                                       CornerRadius="10"
-                                       Margin="0,0,0,10">
-                                    <StackLayout Padding="10" Spacing="10">
-                                        
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="Nome: " />
-                                            <Label FontAttributes="Bold" Text="{Binding Nome}" />
-                                        </StackLayout>
-                                        
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="Idade: " />
-                                            <Label FontSize="12" Text="{Binding Idade}" />
-                                        </StackLayout>
-                                        
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="Dono: " />
-                                            <Label FontSize="12" Text="{Binding Dono}" />
-                                        </StackLayout>
-                                        
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="Espécie: " />
-                                            <Label FontSize="12" Text="{Binding Especie}" />
-                                        </StackLayout>
-
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="Motivo: " />
-                                            <Label FontSize="12" Text="{Binding Motivo}" />
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-
+        <VerticalStackLayout Padding="20" Spacing="30">
+            <Image Source="logo_desejo.jpeg"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   Margin="10"/>
+            <Frame CornerRadius="10"
+                   Padding="0, 0, 0, 0"
+                   BackgroundColor="#F5A9C4"
+                   BorderColor="#F5A9C4">
+                <StackLayout  Spacing="20">
+                    <StackLayout Spacing="200">
+                        <Border
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 20"
+                            Padding="0"
+                            HeightRequest="290">
+                            <Image Source="imgp.jpeg"
+                                   Aspect="AspectFill"/>
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                                </Shadow>
+                            </Border.Shadow>
+                        </Border>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
+            <CollectionView ItemsLayout="VerticalGrid, 3"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border StrokeThickness="3"
+                                StrokeShape="RoundRectangle 20"
+                                Margin="5"
+                                Stroke="#b54b66"
+                                Padding="0">
+                            <Image Source="{Binding}" 
+                                   Aspect="AspectFill"
+                                   HeightRequest="100"
+                                   WidthRequest="134"/>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
 
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>img1.jpeg</x:String>
+                        <x:String>img2.jpeg</x:String>
+                        <x:String>img3.jpeg</x:String>
+                        <x:String>img4.jpeg</x:String>
+                        <x:String>img5.jpeg</x:String>
+                        <x:String>img6.jpeg</x:String>
+                        <x:String>img7.jpeg</x:String>
+                        <x:String>img8.jpeg</x:String>
+                        <x:String>img9.jpeg</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+            </CollectionView>
         </VerticalStackLayout>
-    </ScrollView>   
+    </ScrollView>
+    
 </ContentPage>

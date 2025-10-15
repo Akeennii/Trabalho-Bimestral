@@ -6,10 +6,8 @@ namespace ProjetoElemento.View;
 
 public partial class Show : ContentPage
 {
-	public Show(ObservableCollection<Animal> animal)
+	public Show()
 	{
         InitializeComponent();
-		listaAnimais.ItemsSource = animal;
-		BindingContext = this;
     }
 }
