@@ -11,7 +11,8 @@
             <Image Source="logo_desejo.jpeg"
                    HeightRequest="100"
                    WidthRequest="100"
-                   Margin="10"/>
+                   Margin="10"
+                   HorizontalOptions="Start"/>
             <Frame CornerRadius="10"
                    Padding="0, 0, 0, 0"
                    BackgroundColor="#F5A9C4"
@@ -33,38 +34,195 @@
                     </StackLayout>
                 </StackLayout>
             </Frame>
-            <CollectionView ItemsLayout="VerticalGrid, 3"
-                            SelectionMode="None">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Border StrokeThickness="3"
-                                StrokeShape="RoundRectangle 20"
-                                Margin="5"
-                                Stroke="#b54b66"
-                                Padding="0">
-                            <Image Source="{Binding}" 
-                                   Aspect="AspectFill"
-                                   HeightRequest="100"
-                                   WidthRequest="134"/>
-                        </Border>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Start">
+                <Border
+                   StrokeThickness="3"
+                   StrokeShape="RoundRectangle 20"
+                   Padding="0"
+                   HeightRequest="100"
+                   WidthRequest="100">
+                    <Image Source="img1.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img2.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
 
-                <CollectionView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>img1.jpeg</x:String>
-                        <x:String>img2.jpeg</x:String>
-                        <x:String>img3.jpeg</x:String>
-                        <x:String>img4.jpeg</x:String>
-                        <x:String>img5.jpeg</x:String>
-                        <x:String>img6.jpeg</x:String>
-                        <x:String>img7.jpeg</x:String>
-                        <x:String>img8.jpeg</x:String>
-                        <x:String>img9.jpeg</x:String>
-                    </x:Array>
-                </CollectionView.ItemsSource>
-            </CollectionView>
+                </Border>
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img3.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Start">
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Conjunto &#x0A; Encanto &#x0A; R$79,90"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Conjunto &#x0A; Encanto &#x0A; R$79,90"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Conjunto &#x0A; Romance &#x0A; R$79,90"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Start">
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img4.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img5.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+
+                </Border>
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img6.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Start">
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Conjunto &#x0A; Sensual &#x0A; R$82,67"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Corselete &#x0A; R$47,99"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Body Luxo &#x0A; R$56,00"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Start">
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img7.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img8.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+
+                </Border>
+                <Border
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 20"
+                    Padding="0"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Image Source="img9.jpeg"
+                           Aspect="AspectFill"/>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.4" Radius="20" Offset="0,9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Start">
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Camisola &#x0A; R$79,90"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Conjunto &#x0A; Delicado &#x0A; R$78,84"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="&#x200B;"/>
+                <Label Text="Camisola &#x0A; R$79,90"
+                       TextColor="#D10D42"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
-    
 </ContentPage>
