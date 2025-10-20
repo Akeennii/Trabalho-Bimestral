@@ -20,15 +20,15 @@
                    HorizontalTextAlignment="Center" />
             <Label
                 Text="Insira seu nome: " TextColor="Black"/>
-            <Entry x:Name="nome" Placeholder="Nome" PlaceholderColor="Black" FontAttributes="Bold" TextColor="Black"/>
+            <Entry x:Name="nome" Placeholder="Nome" PlaceholderColor="Gray" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
 
             <Label
                 Text="Insira seu e-mail: " TextColor="Black"/>
-            <Entry x:Name="email" Placeholder="E-mail" PlaceholderColor="Black" FontAttributes="Bold" TextColor="Black"/>
+            <Entry x:Name="email" Placeholder="E-mail" PlaceholderColor="Gray" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
 
             <Label
                 Text="Insira sua senha: "  TextColor="Black"/>
-            <Entry x:Name="senha" Placeholder="Senha" PlaceholderColor="Black" FontAttributes="Bold" IsPassword="True" TextColor="Black"/>
+            <Entry x:Name="senha" Placeholder="Senha" PlaceholderColor="Gray" FontAttributes="Italic" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
 
             <Button
                 Text="Cadastrar" TextColor="Black" HorizontalOptions="End" VerticalOptions="End" Clicked="Sucesso_cad"/>
