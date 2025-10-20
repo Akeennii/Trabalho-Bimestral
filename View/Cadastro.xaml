@@ -15,9 +15,9 @@
                        Aspect="AspectFit" />
 
 
-                <Entry x:Name="nome" Placeholder="Usuário/e-mail" PlaceholderColor="Black" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
+                <Entry x:Name="nome" Placeholder="Usuário/e-mail" PlaceholderColor="Gray" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
 
-                <Entry x:Name="idade" Placeholder="Senha" PlaceholderColor="Black" FontAttributes="Italic" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
+                <Entry x:Name="idade" Placeholder="Senha" PlaceholderColor="Gray" FontAttributes="Italic" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
 
             <Label
                     Text="Esqueci minha senha" TextColor="Black" TextDecorations="Underline">
