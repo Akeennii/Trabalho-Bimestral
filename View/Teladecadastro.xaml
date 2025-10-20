@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoElemento.View.Teladecadastro"
+             Title="Teladecadastro"
+             BackgroundColor="#F5A9C4">
+    <VerticalStackLayout>
+        <VerticalStackLayout
+            Margin="40"
+            Padding="30"
+            Spacing="20">
+            <Image Source="logo_desejo.jpeg"
+                   HeightRequest="160"
+                   Aspect="AspectFit" />
+
+            <Label Text="Crie sua conta"
+                   TextColor="#D10D42"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center" />
+            <Label
+                Text="Insira seu nome: " TextColor="Black"/>
+            <Entry x:Name="nome" Placeholder="Nome" PlaceholderColor="Black" FontAttributes="Bold" TextColor="Black"/>
+
+            <Label
+                Text="Insira seu e-mail: " TextColor="Black"/>
+            <Entry x:Name="email" Placeholder="E-mail" PlaceholderColor="Black" FontAttributes="Bold" TextColor="Black"/>
+
+            <Label
+                Text="Insira sua senha: "  TextColor="Black"/>
+            <Entry x:Name="senha" Placeholder="Senha" PlaceholderColor="Black" FontAttributes="Bold" IsPassword="True" TextColor="Black"/>
+
+            <Button
+                Text="Cadastrar" TextColor="Black" HorizontalOptions="End" VerticalOptions="End" Clicked="Sucesso_cad"/>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

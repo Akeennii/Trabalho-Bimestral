@@ -15,17 +15,30 @@
                        Aspect="AspectFit" />
 
 
-                <Entry x:Name="nome" Placeholder="Usuário/e-mail" PlaceholderColor="Black" FontAttributes="Bold"/>
+                <Entry x:Name="nome" Placeholder="Usuário/e-mail" PlaceholderColor="Black" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
 
-                <Entry x:Name="idade" Placeholder="Senha" PlaceholderColor="Black" FontAttributes="Bold" IsPassword="True"/>
+                <Entry x:Name="idade" Placeholder="Senha" PlaceholderColor="Black" FontAttributes="Italic" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
 
-                <Label
-                    Text="Esqueci minha senha" TextColor="Black"/>
-                
-                <Label
-                    Text="Cadastrar" TextColor="Black"/>
+            <Label
+                    Text="Esqueci minha senha" TextColor="Black" TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="Esqueci_senha" 
+                        NumberOfTapsRequired="1">
+                    </TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
 
-                <Button
+            <Label
+                    Text="Cadastrar" TextColor="Black" TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="Realizar_cad" 
+                        NumberOfTapsRequired="1">
+                    </TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Button
                     Text="Entrar"
                     Clicked="Entrar"
                     BackgroundColor="White"

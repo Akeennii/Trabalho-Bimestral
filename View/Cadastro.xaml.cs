@@ -2,22 +2,17 @@ using Microsoft.Maui.Controls;
 using ProjetoElemento.Models;
 using System.Collections.ObjectModel;
 using ProjetoElemento.View;
+using System.Threading.Tasks;
 
 namespace ProjetoElemento
 {
     public partial class Cadastro : ContentPage
     {
-        ObservableCollection<Animal> listaAnimais = new ObservableCollection<Animal>();
         public Cadastro()
         {
             InitializeComponent();
         }
 
-        public Cadastro(ObservableCollection<Animal> listaAnimais)
-        {
-            InitializeComponent();
-            this.listaAnimais = listaAnimais;
-        }
 
         private void Entrar(object sender, EventArgs e)
         {
@@ -29,5 +24,14 @@ namespace ProjetoElemento
             await Navigation.PushAsync(new Show());
         }
 
+        private async void Realizar_cad(object sender, TappedEventArgs e)
+        {
+            await Navigation.PushAsync(new Teladecadastro());
+        }
+
+        private void Esqueci_senha(object sender, TappedEventArgs e)
+        {
+            DisplayAlert("Aviso", "Infelizmente, também esqueci sua senha.", "OK");
+        }
     }
 }
