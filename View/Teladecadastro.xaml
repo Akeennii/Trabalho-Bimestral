@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoElemento.View.Teladecadastro"
              Title="Teladecadastro"
-             BackgroundColor="#fef4be">
+             BackgroundColor="#FEF4EB">
     <ScrollView>
         <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
@@ -23,7 +23,7 @@
                    Padding="10"
                    HasShadow="False">
                 <HorizontalStackLayout Spacing="10">
-                    <Image Source="user.png" HeightRequest="20" WidthRequest="20" />
+                    <Image Source="user.jpeg" HeightRequest="20" WidthRequest="20" />
                     <Entry Placeholder="Usuário ou e-mail"
                            PlaceholderColor="Black"
                            TextColor="Black"
@@ -36,7 +36,7 @@
                    Padding="10"
                    HasShadow="False">
                 <HorizontalStackLayout Spacing="10">
-                    <Image Source="lock.png" HeightRequest="20" WidthRequest="20" />
+                    <Image Source="lock.jpeg" HeightRequest="20" WidthRequest="20" />
                     <Entry Placeholder="Senha"
                            PlaceholderColor="Black"
                            IsPassword="True"

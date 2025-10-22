@@ -3,41 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoElemento.View.Loja"
              Title="Loja"
-             BackgroundColor="#fef4be">
+             BackgroundColor="#FEF4EB">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="20">
 
-
-            <Grid ColumnDefinitions="Auto,*,Auto" VerticalOptions="Center">
-                <Image Source="imglogo.jpeg"
+            <Frame BackgroundColor="#F3C6CF" CornerRadius="20">
+                <Grid ColumnDefinitions="Auto,*,Auto" VerticalOptions="Center" BackgroundColor="#F3C6CF">
+                    <Image Source="imglogo2.jpeg"
                        HeightRequest="40"
                        Margin="0,0,10,0"
                        Grid.Column="0" />
-                <Label Text="Escolha sua magia GELADA!"
+                    <Label Text="Escolha sua magia GELADA!"
                        FontAttributes="Bold"
                        FontSize="16"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
                        Grid.Column="1" />
-                <Image Source="cart.png"
+                    <Image Source="carrinho2.jpeg"
                        HeightRequest="25"
                        WidthRequest="25"
                        Grid.Column="2"
                        HorizontalOptions="End" />
-            </Grid>
-
+                </Grid>
+            </Frame>
             <Label Text="Nossos Sabores Mágicos 🍦"
                    FontAttributes="Bold"
                    FontSize="16"
                    TextColor="Black"
                    HorizontalTextAlignment="Center"
                    Margin="0,10,0,10" />
-
-            <!-- Grade de produtos -->
-            <Grid ColumnDefinitions="*,*" RowSpacing="20" ColumnSpacing="20">
-
-                <!-- Linha 1 -->
-                <Frame Grid.Column="0" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Fill">
+                <Frame CornerRadius="20" BackgroundColor="#F4DCE7" HasShadow="False">
                     <VerticalStackLayout>
                         <Image Source="img1.jpeg" Aspect="AspectFill" HeightRequest="120" />
                         <Label Text="Morango Encantado"
@@ -51,7 +47,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Column="1" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                <Frame CornerRadius="20" BackgroundColor="#F4DCE7" HasShadow="False">
                     <VerticalStackLayout>
                         <Image Source="img2.jpeg" Aspect="AspectFill" HeightRequest="120" />
                         <Label Text="Chocolate Mágico"
@@ -64,9 +60,9 @@
                                TextColor="Black" />
                     </VerticalStackLayout>
                 </Frame>
-
-                <!-- Linha 2 -->
-                <Frame Grid.Row="1" Grid.Column="0" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Fill">
+                <Frame CornerRadius="20" BackgroundColor="#F4DCE7" HasShadow="False">
                     <VerticalStackLayout>
                         <Image Source="img3.jpeg" Aspect="AspectFill" HeightRequest="120" />
                         <Label Text="Pistache das Fadas"
@@ -80,7 +76,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="1" Grid.Column="1" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                <Frame CornerRadius="20" BackgroundColor="#F4DCE7" HasShadow="False">
                     <VerticalStackLayout>
                         <Image Source="img4.jpeg" Aspect="AspectFill" HeightRequest="120" />
                         <Label Text="Arco-íris Gelado"
@@ -93,9 +89,9 @@
                                TextColor="Black" />
                     </VerticalStackLayout>
                 </Frame>
-
-                <!-- Linha 3 -->
-                <Frame Grid.Row="2" Grid.Column="0" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="15" Orientation="Horizontal" HorizontalOptions="Fill">
+                <Frame CornerRadius="20" BackgroundColor="#F4DCE7" HasShadow="False">
                     <VerticalStackLayout>
                         <Image Source="img5.jpeg" Aspect="AspectFill" HeightRequest="120" />
                         <Label Text="Caramelo Dourado"
@@ -109,7 +105,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="2" Grid.Column="1" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                <Frame CornerRadius="20" BackgroundColor="#F4DCE7" HasShadow="False">
                     <VerticalStackLayout>
                         <Image Source="img6.jpeg" Aspect="AspectFill" HeightRequest="120" />
                         <Label Text="Amora Encantada"
@@ -122,9 +118,7 @@
                                TextColor="Black" />
                     </VerticalStackLayout>
                 </Frame>
-
-            </Grid>
-
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
