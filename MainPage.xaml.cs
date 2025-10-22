@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Maui.Controls;
+using ProjetoElemento.View;
 
 namespace ProjetoElemento;
 
@@ -10,9 +11,9 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private async void ButtonClicked(object sender, EventArgs e)
+    private async void Irlogin(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Cadastro());
+        await Navigation.PushAsync(new Teladecadastro());
     }
 
    

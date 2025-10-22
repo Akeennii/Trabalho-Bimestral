@@ -1,3 +1,4 @@
+
 namespace ProjetoElemento.View;
 
 public partial class Teladecadastro : ContentPage
@@ -6,13 +7,9 @@ public partial class Teladecadastro : ContentPage
 	{
 		InitializeComponent();
 	}
-    private void Sucesso_cad(object sender, EventArgs e)
+
+    private async void Irloja(object sender, EventArgs e)
     {
-        DisplayAlert("Aviso", "Cadastro realizado com sucesso", "OK");
-        Voltar(sender, e);
-    }
-    public void Voltar(object sender, EventArgs e)
-	{
-		Navigation.PushAsync(new Cadastro());
+        await Navigation.PushAsync(new Loja());
     }
 }

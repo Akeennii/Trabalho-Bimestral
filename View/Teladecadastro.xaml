@@ -3,36 +3,74 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoElemento.View.Teladecadastro"
              Title="Teladecadastro"
-             BackgroundColor="#F5A9C4">
-    <VerticalStackLayout>
-        <VerticalStackLayout
-            Margin="40"
-            Padding="30"
-            Spacing="20">
-            <Image Source="logo_desejo.jpeg"
-                   HeightRequest="160"
-                   Aspect="AspectFit" />
+             BackgroundColor="#fef4be">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
-            <Label Text="Crie sua conta"
-                   TextColor="#D10D42"
+            <Image Source="imglogo.jpeg"
+                   HeightRequest="150"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Bem-vindo de volta ao mundo mágico dos sabores!"
                    FontAttributes="Bold"
-                   FontSize="18"
-                   HorizontalTextAlignment="Center" />
-            <Label
-                Text="Insira seu nome: " TextColor="Black"/>
-            <Entry x:Name="nome" Placeholder="Nome" PlaceholderColor="Gray" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="0,10,0,20" />
 
-            <Label
-                Text="Insira seu e-mail: " TextColor="Black"/>
-            <Entry x:Name="email" Placeholder="E-mail" PlaceholderColor="Gray" FontAttributes="Italic" TextColor="Black" BackgroundColor="White"/>
+            <Frame BackgroundColor="#F3C6CF"
+                   CornerRadius="20"
+                   Padding="10"
+                   HasShadow="False">
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="user.png" HeightRequest="20" WidthRequest="20" />
+                    <Entry Placeholder="Usuário ou e-mail"
+                           PlaceholderColor="Black"
+                           TextColor="Black"
+                           BackgroundColor="Transparent" />
+                </HorizontalStackLayout>
+            </Frame>
 
-            <Label
-                Text="Insira sua senha: "  TextColor="Black"/>
-            <Entry x:Name="senha" Placeholder="Senha" PlaceholderColor="Gray" FontAttributes="Italic" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
+            <Frame BackgroundColor="#F3C6CF"
+                   CornerRadius="20"
+                   Padding="10"
+                   HasShadow="False">
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="lock.png" HeightRequest="20" WidthRequest="20" />
+                    <Entry Placeholder="Senha"
+                           PlaceholderColor="Black"
+                           IsPassword="True"
+                           TextColor="Black"
+                           BackgroundColor="Transparent" />
+                </HorizontalStackLayout>
+            </Frame>
 
-            <Button
-                Text="Cadastrar" TextColor="Black" HorizontalOptions="End" VerticalOptions="End" Clicked="Sucesso_cad"/>
+            <Button Text="ENTRAR"
+                    BackgroundColor="#F3C6CF"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HeightRequest="45"
+                    FontSize="16"
+                    HorizontalOptions="Center"
+                    WidthRequest="200" 
+                    Clicked="Irloja"/>
+
+            <Label Text="Esqueci minha senha"
+                   FontSize="12"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#B095C9"
+                   Margin="0,10,0,0" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Não tem conta? " TextColor="Black" FontSize="12"/>
+                        <Span Text="Cadastrar-se" TextColor="#B095C9" FontSize="12" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
 
         </VerticalStackLayout>
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

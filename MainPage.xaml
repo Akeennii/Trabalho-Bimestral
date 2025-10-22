@@ -3,33 +3,43 @@
     x:Class="ProjetoElemento.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="#F5A9C4">
+    BackgroundColor="#FEF4EB">
 
     <ScrollView>
-        <VerticalStackLayout
-            Margin="40"
-            Padding="30"
-            Spacing="30">
+        <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
 
-            <Image Source="logo_desejo.jpeg"
-                   HeightRequest="160"
-                   Aspect="AspectFit" />
+            <Image Source="imglogo.jpeg"
+                   HeightRequest="150"
+                   HorizontalOptions="Center" />
 
-            <Label Text="Seja bem-vinda ao Desejo Íntimo — descubra a lingerie que desperta sua essência e realça sua beleza única."
-                   TextColor="#5B259F"
+            <Label Text="Bem-vindo à Magic Shop!"
                    FontAttributes="Bold"
                    FontSize="18"
-                   HorizontalTextAlignment="Center" />
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black" />
 
-            <Button Text="Login"
+            <Label Text="Entre, escolha seu feitiço gelado e deixe a magia do sabor começar!"
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="0,0,0,10" />
+
+            <Button Text="COMEÇAR"
+                    BackgroundColor="#F3C6CF"
                     TextColor="Black"
                     FontAttributes="Bold"
-                    FontSize="18"
-                    BackgroundColor="White"
-                    CornerRadius="25"
-                    HeightRequest="50"
+                    CornerRadius="20"
+                    HeightRequest="45"
+                    FontSize="16"
+                    HorizontalOptions="Center"
                     WidthRequest="200"
-                    Clicked="ButtonClicked"/>
+                    Clicked="Irlogin"/>
+
+            <Label Text="Crie sua conta ou entre para viver essa magia!"
+                   FontSize="12"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="0,10,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>

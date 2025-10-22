@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoElemento.View.Loja"
+             Title="Loja"
+             BackgroundColor="#fef4be">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+
+            <Grid ColumnDefinitions="Auto,*,Auto" VerticalOptions="Center">
+                <Image Source="imglogo.jpeg"
+                       HeightRequest="40"
+                       Margin="0,0,10,0"
+                       Grid.Column="0" />
+                <Label Text="Escolha sua magia GELADA!"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                       Grid.Column="1" />
+                <Image Source="cart.png"
+                       HeightRequest="25"
+                       WidthRequest="25"
+                       Grid.Column="2"
+                       HorizontalOptions="End" />
+            </Grid>
+
+            <Label Text="Nossos Sabores Mágicos 🍦"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,10" />
+
+            <!-- Grade de produtos -->
+            <Grid ColumnDefinitions="*,*" RowSpacing="20" ColumnSpacing="20">
+
+                <!-- Linha 1 -->
+                <Frame Grid.Column="0" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                    <VerticalStackLayout>
+                        <Image Source="img1.jpeg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="Morango Encantado"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                        <Label Text="R$ 9,90"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Column="1" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                    <VerticalStackLayout>
+                        <Image Source="img2.jpeg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="Chocolate Mágico"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                        <Label Text="R$ 10,50"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Linha 2 -->
+                <Frame Grid.Row="1" Grid.Column="0" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                    <VerticalStackLayout>
+                        <Image Source="img3.jpeg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="Pistache das Fadas"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                        <Label Text="R$ 11,20"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="1" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                    <VerticalStackLayout>
+                        <Image Source="img4.jpeg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="Arco-íris Gelado"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                        <Label Text="R$ 12,00"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Linha 3 -->
+                <Frame Grid.Row="2" Grid.Column="0" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                    <VerticalStackLayout>
+                        <Image Source="img5.jpeg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="Caramelo Dourado"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                        <Label Text="R$ 10,00"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="2" Grid.Column="1" CornerRadius="20" BackgroundColor="#FBEAF0" HasShadow="False">
+                    <VerticalStackLayout>
+                        <Image Source="img6.jpeg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="Amora Encantada"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                        <Label Text="R$ 9,80"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

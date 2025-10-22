@@ -64,16 +64,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="View\Cadastro.xaml.cs">
-	    <DependentUpon>Cadastro.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="View\Cadastro.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Show.xaml">
+	  <MauiXaml Update="View\Loja.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Teladecadastro.xaml">
